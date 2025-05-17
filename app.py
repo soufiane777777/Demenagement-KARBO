@@ -343,13 +343,4 @@ def export_to_sheets(dataframe, sheet_range='A1'):
 
 st.title("Export vers Google Sheets")
 
-# Exemple : dataframe simple
-df = pd.DataFrame({
-    'Nom': ['Alice', 'Bob'],
-    'Age': [25, 30]
-})
 
-st.dataframe(df)
-
-if st.button("Exporter vers Google Sheets"):
-    export_to_sheets(df, sheet_range='Feuille1!A1')
